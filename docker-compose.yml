@@ -1,0 +1,8 @@
+services:
+  app:
+    image: test
+    build: .
+    volumes:
+      - .:/app
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
